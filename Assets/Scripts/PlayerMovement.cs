@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
+
+	public GameManager manager;
+
 	public float moveSpeed;
 	public GameObject deathParticles;
 
@@ -11,6 +14,7 @@ public class PlayerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		spawn = transform.position;
+		manager = manager.GetComponent<GameManager>();
 	}
 	
 	// Update is called once per frame
@@ -60,10 +64,15 @@ public class PlayerMovement : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.transform.tag == "Goal") {
-			GameManager.CompleteLevel();
+			manager.CompleteLevel();
 		}
 		if (other.transform.tag == "Enemy") {
 			Die();
+		}
+		
+		if (other.transform.tag == "Token") {
+			manager.tokenCount++;
+			Destroy(other.gameObject);
 		}
 	}
 

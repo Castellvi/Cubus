@@ -670,7 +670,7 @@ Transform:
   m_GameObject: {fileID: 245199102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.689999998, z: -.0599999987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .699999988, y: 1, z: 1}
   m_Children:
   - {fileID: 115798315}
   - {fileID: 1307603873}
@@ -2436,7 +2436,7 @@ Transform:
   m_GameObject: {fileID: 1228415275}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.689999998, z: -.0599999987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .699999988, y: 1, z: 1}
   m_Children:
   - {fileID: 2044930812}
   - {fileID: 1212018040}
@@ -3046,7 +3046,7 @@ Transform:
   m_GameObject: {fileID: 1506907003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.689999998, z: -.0599999987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .699999988, y: 1, z: 1}
   m_Children:
   - {fileID: 829900401}
   - {fileID: 1694538450}
@@ -3224,7 +3224,7 @@ Transform:
   m_GameObject: {fileID: 1580696199}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.689999998, z: -.0599999987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .699999988, y: 1, z: 1}
   m_Children:
   - {fileID: 1614912582}
   - {fileID: 634956084}
@@ -3742,6 +3742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 054b316f727a19c499fe365b3fd4fa53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1790123126}
   moveSpeed: 20
   deathParticles: {fileID: 131752, guid: 68be9e8e77168434d9595eb441eb981b, type: 2}
 --- !u!1 &1790123125
@@ -3754,7 +3755,7 @@ GameObject:
   - 4: {fileID: 1790123127}
   - 114: {fileID: 1790123126}
   m_Layer: 0
-  m_Name: EmptyObject
+  m_Name: Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3771,6 +3772,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd8c015739f4414987e094b9cd43306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentScore: 0
+  highScore: 0
+  currentLevel: 1
+  unlockedLevel: 0
   skin: {fileID: 11400000, guid: 07fa09900dfb19d458927e8d86f30502, type: 2}
   timerRect:
     serializedVersion: 2
@@ -4080,7 +4085,7 @@ Transform:
   m_GameObject: {fileID: 2000808761}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.689999998, z: -.0599999987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .699999988, y: 1, z: 1}
   m_Children:
   - {fileID: 333344850}
   - {fileID: 1618254266}
@@ -4355,7 +4360,7 @@ Transform:
   m_GameObject: {fileID: 2053451673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.689999998, z: -.0599999987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .699999988, y: 1, z: 1}
   m_Children:
   - {fileID: 803604568}
   - {fileID: 1540221174}

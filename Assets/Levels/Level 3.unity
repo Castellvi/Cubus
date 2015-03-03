@@ -1637,6 +1637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 054b316f727a19c499fe365b3fd4fa53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1882201046}
   moveSpeed: 20
   deathParticles: {fileID: 131752, guid: 68be9e8e77168434d9595eb441eb981b, type: 2}
 --- !u!1 &1835772383
@@ -1718,7 +1719,7 @@ GameObject:
   - 4: {fileID: 1882201047}
   - 114: {fileID: 1882201046}
   m_Layer: 0
-  m_Name: EmptyObject
+  m_Name: Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1735,6 +1736,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd8c015739f4414987e094b9cd43306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentScore: 0
+  highScore: 0
+  currentLevel: 1
+  unlockedLevel: 0
   skin: {fileID: 11400000, guid: 07fa09900dfb19d458927e8d86f30502, type: 2}
   timerRect:
     serializedVersion: 2
